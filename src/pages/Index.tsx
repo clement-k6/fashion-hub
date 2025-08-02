@@ -486,13 +486,16 @@ const Index: React.FC = () => {
           <div className="flex-1 flex flex-col items-center gap-6">
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-white rounded-full shadow-lg w-24 h-24 flex items-center justify-center border-4 border-[#A8DADC]">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member" className="rounded-full w-20 h-20 object-cover" />
+                <img src="" alt="Team Member" className="rounded-full w-20 h-20 object-cover" />
               </div>
               <div className="bg-white rounded-full shadow-lg w-24 h-24 flex items-center justify-center border-4 border-[#A8DADC]">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member" className="rounded-full w-20 h-20 object-cover" />
+                <img src="" alt="Team Member" className="rounded-full w-20 h-20 object-cover" />
               </div>
               <div className="bg-white rounded-full shadow-lg w-24 h-24 flex items-center justify-center border-4 border-[#A8DADC]">
-                <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team Member" className="rounded-full w-20 h-20 object-cover" />
+                <img src="" alt="Team Member" className="rounded-full w-20 h-20 object-cover" />
+              </div>
+                <div className="bg-white rounded-full shadow-lg w-24 h-24 flex items-center justify-center border-4 border-[#A8DADC]">
+                <img src="" alt="Team Member" className="rounded-full w-20 h-20 object-cover" />
               </div>
             </div>
             <span className="text-[#1D3557] mt-2 font-semibold">Meet our team</span>
