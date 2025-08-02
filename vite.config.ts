@@ -3,19 +3,24 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 import { componentTagger } from 'lovable-tagger';
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
     host: '::',
     port: 8080,
-    mimeTypes: {
-      'text/javascript': ['js', 'jsx', 'ts', 'tsx'],
-    },
   },
-  preview: {
-    mimeTypes: {
-      'text/javascript': ['js', 'jsx', 'ts', 'tsx'],
-    },
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html') // Ensure this points to your entry HTML
+      },
+      output: {
+        entryFileNames: `assets/[name].[hash].js`,
+        chunkFileNames: `assets/[name].[hash].js`,
+        assetFileNames: `assets/[name].[hash].[ext]`
+      }
+    }
   },
   plugins: [
     react(),
